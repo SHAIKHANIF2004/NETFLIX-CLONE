@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #141414;
+      color: white;
+    }
+
+    header {
+      background-color: transparent;
+      position: fixed;
+      width: 100%;
+      padding: 20px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 100;
+    }
+
+    .logo {
+      width: 120px;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: url('https://occ-0-3757-3758.1.nflxso.net/dnm/api/v6/H3w3Z_PN6FJdvJYt85bUlsLVzZg/AAAABZydo6uVNHfZj0O1cWTV0rKkAzOetUSVv3bPi0rPdhZfU_LvGnhYrfQwSsy5sXs3cQYYH6jYOM1r_8A2H9bE3i2MSqjcY8O3B2I.webp?r=02c') no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      top: 40%;
+      transform: translateY(-50%);
+      padding-left: 60px;
+      max-width: 600px;
+      z-index: 1;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .hero-content button {
+      padding: 12px 24px;
+      margin-right: 10px;
+      border: none;
+      background-color: #e50914;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .hero-content button:hover {
+      background-color: #f40612;
+    }
+
+    .section {
+      padding: 50px;
+    }
+
+    .section h2 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .row {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+    }
+
+    .row img {
+      width: 200px;
+      height: auto;
+      border-radius: 5px;
+      transition: transform 0.3s;
+    }
+
+    .row img:hover {
+      transform: scale(1.08);
+    }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      color: gray;
+      background: #111;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
+    <div class="nav-menu">
+      <a href="#">Home</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">New & Popular</a>
+      <a href="#">My List</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Watch Unlimited Movies & TV Shows</h1>
+      <p>Ready to watch? Click below to get started.</p>
+      <button>Get Started</button>
+      <button>Learn More</button>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Trending Now</h2>
+    <div class="row">
+      <img src="https://upload.wikimedia.org/wikipedia/en/7/74/Avengers_Endgame_poster.jpg" alt="Avengers Endgame">
+      <img src="https://upload.wikimedia.org/wikipedia/en/9/90/Inception_%282010%29_theatrical_poster.jpg" alt="Inception">
+      <img src="https://upload.wikimedia.org/wikipedia/en/f/f9/TheBatman2022Poster.jpg" alt="The Batman">
+      <img src="https://upload.wikimedia.org/wikipedia/en/d/d1/Spider-Man_No_Way_Home_poster.jpg" alt="Spider-Man: No Way Home">
+      <img src="https://upload.wikimedia.org/wikipedia/en/e/e1/Tenet_film_poster.jpg" alt="Tenet">
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Top Picks For You</h2>
+    <div class="row">
+      <img src="https://upload.wikimedia.org/wikipedia/en/6/67/Dune_%282021_film%29.jpg" alt="Dune">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/36/Stranger_Things_season_4.jpg" alt="Stranger Things">
+      <img src="https://upload.wikimedia.org/wikipedia/en/4/4e/The_Witcher_title_card.png" alt="The Witcher">
+      <img src="https://upload.wikimedia.org/wikipedia/en/f/fc/The_Queen%27s_Gambit.png" alt="The Queen's Gambit">
+      <img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Squid_Game.jpg" alt="Squid Game">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Netflix Clone by Shaik Hanif | UI Inspired by Netflix</p>
+  </footer>
+</body>
+</html>
